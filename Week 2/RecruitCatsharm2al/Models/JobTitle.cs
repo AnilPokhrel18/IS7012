@@ -9,7 +9,6 @@ namespace RecruitCatsharm2al.Models
 {
     public class JobTitle
     {
-        [Range(1, 9999999)]
         public int Id { get; set; }
 
         [DisplayName("Minimum Salary")]
