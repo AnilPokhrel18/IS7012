@@ -7,12 +7,19 @@ namespace RecruitCatsharm2al.Models
 {
     public class Company
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public DateTime DateOfBirth { get; set; }
-        public int AccountHolderId { get; set; }
-        public int PhoneNum { get; set; }
-        public long Address { get; set; }
-        public List<BankAccount> BankAccountID { get; set; }
+        public Industry Industry { get; set; }
+        public int IndustryId { get; set; }
+        public string Name { get; set; }
+        public decimal MinSalary { get; set; }
+        public decimal MaxSalary { get; set; }
+        public DateTime? StartDate { get; set; }
+        public int CompanyId { get; set; }
+        public string Recruiting { get; set; }
+        public int Id { get; set; }
+        public bool GreenInitiative { get; set; }
+        public JobTitle JobTitle { get; set; }
+        public List<Candidate> CandidateIds { get; set; }
+        public bool OpenPositin { get; set; }
+        public int JobTitleId { get; set; }
     }
 }

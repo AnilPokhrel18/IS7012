@@ -8,12 +8,11 @@ namespace RecruitCatsharm2al.Models
     public class JobTitle
     {
         public int Id { get; set; }
+        public decimal MinSalary { get; set; }
+        public decimal MaxSalary { get; set; }
         public string Title { get; set; }
-        public decimal SalaryMin { get; set; }
-        public decimal SalaryMax { get; set; }
-        public int CompanyId { get; set; }
+        public List<Company> Company { get; set; }
         public List<Candidate> CandidateIds { get; set; }
-        public Company OpenRole { get; set; }
-        public int OpenRoleId { get; set; }
+        public int OpenPositionId { get; set; }
     }
 }
